@@ -33,6 +33,13 @@ export default function Home() {
     router.replace('/dashboard');
   };
 
+  const handleKeyDown = (event: React.KeyboardEvent) => {
+    console.log(event.key);
+    if (event.key === 'Enter' && isValidPassword) {
+      verifyPassword();
+    }
+  };
+
   return (
     <div className="relative flex min-h-screen flex-col">
       <DemoSticker />
@@ -52,6 +59,7 @@ export default function Home() {
             className="w-72 border-2 border-red-500 bg-transparent py-2 pl-2 tracking-[0.2rem]"
             minLength={passwordMinLength}
             maxLength={passwordMaxLength}
+            onKeyDown={handleKeyDown}
           />
           <button
             aria-label="Submit password"
