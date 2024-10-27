@@ -7,4 +7,5 @@ export const menuItems: MenuItem[] = [
   { name: 'Secrets', id: 'secrets', url: `${baseUrl}/secrets` },
   { name: 'Notes', id: 'notes', url: `${baseUrl}/notes` },
   { name: 'Settings', id: 'settings', url: `${baseUrl}/settings` },
+  { name: 'Logout', id: 'logout', url: `/` },
 ];
