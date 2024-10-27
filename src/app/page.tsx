@@ -71,7 +71,7 @@ export default function Home() {
           </button>
         </div>
       </main>
-      <footer className="p-4 text-right">Passwordy by Sitra</footer>
+      <footer className="p-4 text-right">Created by Sitra</footer>
     </div>
   );
 }
