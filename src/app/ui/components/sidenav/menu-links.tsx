@@ -9,7 +9,7 @@ export default function MenuLinks() {
   const pathname = usePathname();
   return menuItems.map((item) => (
     <div key={item.name} className={'p-2'}>
-      <Link href={item.url} className={clsx({ underline: pathname === item.url })}>
+      <Link href={item.href} className={clsx({ underline: pathname === item.href })}>
         {item.name}
       </Link>
     </div>

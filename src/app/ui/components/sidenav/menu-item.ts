@@ -1,6 +1,6 @@
 export default interface MenuItem {
   name: string;
   id: string;
-  url: string;
+  href: string;
   icon?: string;
 }
